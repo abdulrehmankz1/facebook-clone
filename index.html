@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous" />
+        <title>Facebook Clone</title>
+    </head>
+
+    <body style="padding-left: 0px !important">
+        <main>
+            <nav class="navbar sticky-top navbar-expand-lg col-lg-12 m-0 w-100"
+                style="background-color: white !important; width: 100% !important">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://social.webestica.com/assets/images/logo.svg" alt="" />
+                    </a>
+                    <form class="rounded position-relative d-none d-lg-block">
+                        <input class="form-control ps-5 bg-light" type="search" placeholder="Search..."
+                            aria-label="Search" />
+                        <button class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
+                            type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </form>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <div class="dropdown select">
+                                <button class="drop-btn dropdown-item blue-font">
+                                    Demo
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="blue"
+                                        class="bi bi-chevron-down ms-1" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-items">
+                                    <a class="dropdown-item blue-font" href="#">Home default</a>
+                                    <a href="#">Home classic</a>
+                                    <a href="#">Home post</a>
+                                    <a href="#">Home video</a>
+                                    <a href="#">Home event</a>
+                                    <a href="#">Home</a>
+                                    <a href="#">Landing page</a>
+                                    <a href="#">App download</a>
+                                    <hr />
+                                    <a href="#">Buy Social!</a>
+                                </div>
+                            </div>
+
+                            <div class="dropdown select">
+                                <button class="drop-btn">
+                                    Pages
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black"
+                                        class="bi bi-chevron-down ms-1" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-items">
+                                    <li>
+                                        <a href="#">Albums</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Celebration</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Messaging</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item dropdown-toggle dropdown-opened" href="#">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Events 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Event details</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Event details 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Groups</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Groups details 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Groups</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Groups details</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Post videos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Post videos details</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog details</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dropdown levels</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown select">
+                                <button class="drop-btn">
+                                    Account
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black"
+                                        class="bi bi-chevron-down ms-1" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
+                                <div class="dropdown-items">
+                                    <a href="*">Create a page</a>
+                                    <a href="*">Settings</a>
+                                    <a href="*">Notifcations</a>
+                                    <a href="*">Help center</a>
+                                    <a href="*">Authentication</a>
+                                    <a href="*">Error 404</a>
+                                    <a href="*">Offline</a>
+                                    <a href="*">Privacy & trems</a>
+                                </div>
+                            </div>
+
+                            <div class="dropdown select">
+                                <button class="drop-btn">My Network</button>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="nav flex-nowrap btn-list-container align-items-center lg-ms-7 ms-sm-3 list-unstyled">
+                            <li class="nav-item ms-2">
+                                <a class="nav-link icon-md btn list-btn btn-light p-0" href="*">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#676a79"
+                                        class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link icon-md btn list-btn btn-light p-0" href="*">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#676a79"
+                                        class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link icon-md btn list-btn btn-light p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#676a79"
+                                        class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link icon-md btn btn-light p-0" href="*">
+                                    <img src="https://social.webestica.com/assets/images/avatar/07.jpg" height="39"
+                                        width="39" style="border-radius: 5px" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-lg">
+                <div class="container-lg mt-3 md-me-5">
+                    <div class="row">
+                        <div class="col-lg-3" style="padding-left: 0px">
+                            <div class="d-flex align-items-center d-lg-none mb-3 ms-2">
+                                <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasSideNavbar" aria-controls="offcanvasSideNavbar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-sliders btn btn-primary fw-bold fa-solid fa-sliders-h"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+                                    </svg>
+                                    <span class="h6 mb-0 fw-bold d-lg-none ms-2">My profile</span>
+                                </button>
+                            </div>
+                            <nav class="navbar navbar-expand-lg mx-0 pt-0 pb-0">
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSideNavbar">
+                                    <div class="offcanvas-header">
+                                        <button type="button" class="btn-close text-reset ms-auto"
+                                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body d-block px-2 px-lg-0">
+                                        <div class="card overflow-hidden">
+                                            <div class="aa"></div>
+                                            <div class="card-body pt-0">
+                                                <div class="text-center">
+                                                    <div class="avatar avatar-lg mt-n5 mb-3">
+                                                        <a href="#!"><img class="avatar-img"
+                                                                src="https://social.webestica.com/assets/images/avatar/07.jpg"
+                                                                height="60px" width="60px" alt="" style="
+                                  border: 1px solid rgba(0, 0, 0, 0.1);
+                                  border-radius: 0.4rem !important;
+                                  border-width: 3px !important;
+                                  border-color: #fff !important;
+                                " /></a>
+                                                    </div>
+
+                                                    <h5 class="mb-0">
+                                                        <a class="name-heading" href="#">Sam Lanson </a>
+                                                    </h5>
+                                                    <small style="
+                              font-size: 13px;
+                              color: #676a79;
+                              font-weight: 400;
+                            ">Web Developer at Webestica</small>
+                                                    <p style="
+                              font-size: 15px;
+                              color: #676a79;
+                              margin: 16px 0px;
+                            ">
+                                                        I'd love to change the world, but they won’t give me
+                                                        the source code.
+                                                    </p>
+                                                    <div class="hstack gap-2 gap-xl-3 justify-content-center">
+                                                        <div>
+                                                            <h6 class="mb-0">256</h6>
+                                                            <small>Post</small>
+                                                        </div>
+                                                        <div class="vr" style="
+                                display: inline-block;
+                                -ms-flex-item-align: stretch;
+                                align-self: stretch;
+                                width: 1px;
+                                min-height: 1em;
+                                background-color: currentColor;
+                                opacity: 0.25;
+                              "></div>
+                                                        <div>
+                                                            <h6 class="mb-0">2.5K</h6>
+                                                            <small>Followers</small>
+                                                        </div>
+                                                        <div class="vr"></div>
+                                                        <div>
+                                                            <h6 class="mb-0">365</h6>
+                                                            <small>Following</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <ul class="nav nav-link-secondary flex-column fw-bold gap-2">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="my-profile.html">
+                                                            <img class="me-2 h-20px fa-fw"
+                                                                src="https://social.webestica.com/assets/images/icon/home-outline-filled.svg"
+                                                                alt="" height="20" width="20" /><span
+                                                                class="feed-text">Feed </span></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="my-profile-connections.html">
+                                                            <img class="me-2 h-20px fa-fw"
+                                                                src="https://social.webestica.com/assets/images/icon/person-outline-filled.svg"
+                                                                alt="" height="20" width="20" /><span
+                                                                class="feed-text">Connections </span></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="blog.html">
+                                                            <img class="me-2 h-20px fa-fw"
+                                                                src="https://social.webestica.com/assets/images/icon/earth-outline-filled.svg"
+                                                                alt="" height="20" width="20" /><span
+                                                                class="feed-text">Latest News </span></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="events.html">
+                                                            <img class="me-2 h-20px fa-fw"
+                                                                src="https://social.webestica.com/assets/images/icon/calendar-outline-filled.svg"
+                                                                alt="" height="20" width="20" /><span
+                                                                class="feed-text">Events </span></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="groups.html">
+                                                            <img class="me-2 h-20px fa-fw"
+                                                                src="https://social.webestica.com/assets/images/icon/chat-outline-filled.svg"
+                                                                alt="" height="20" width="20" /><span
+                                                                class="feed-text">Groups </span></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="notifications.html">
+                                                            <img class="me-2 h-20px fa-fw"
+                                                                src="https://social.webestica.com/assets/images/icon/notification-outlined-filled.svg"
+                                                                alt="" height="20" width="20" /><span
+                                                                class="feed-text">Notifications </span></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="settings.html">
+                                                            <img class="me-2 h-20px fa-fw"
+                                                                src="https://social.webestica.com/assets/images/icon/cog-outline-filled.svg"
+                                                                alt="" height="20" width="20" /><span
+                                                                class="feed-text">Settings </span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <a class="btn btn-link btn-sm" href="my-profile.html" style="
+                            font-size: 14px;
+                            color: #0f6fec;
+                            text-decoration: none;
+                          ">View Profile
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="background-color: #eef0f2">
+                                        <ul class="nav small mt-4 justify-content-center lh-1"
+                                            style="background-color: #eef0f2">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="my-profile-about.html"
+                                                    style="color: #676a79">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="settings.html"
+                                                    style="color: #676a79">Settings</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" target="_blank"
+                                                    href="https://support.webestica.com/login"
+                                                    style="color: #676a79">Support
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" target="_blank" href="docs/index.html"
+                                                    style="color: #676a79">Docs
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="help.html" style="color: #676a79">Help</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="privacy-and-terms.html"
+                                                    style="color: #676a79">Privacy &amp; terms</a>
+                                            </li>
+                                        </ul>
+                                        <p class="small text-center mt-1" style="
+                        color: #676a79;
+                        font-size: 13px;
+                        background-color: #eef0f2;
+                      ">
+                                            ©2022
+                                            <a class="text-body" target="_blank" href="https://www.webestica.com/"
+                                                style="
+                          color: #676a79 !important;
+                          font-size: 13px;
+                          text-decoration: none;
+                          background-color: #eef0f2;
+                        ">
+                                                Webestica
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="add-story">
+                                        <button class="story-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                <path
+                                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                            </svg>
+                                        </button>
+                                        <h6 class="story-text">Post a Story</h6>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="story-card" style="
+                      background-image: url('https://social.webestica.com/assets/images/post/1by1/02.jpg');
+                    ">
+                                        <p class="story-name col-xs-pb-3">Judy Nguyen</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="story-card" style="
+                    background-image: url('https://social.webestica.com/assets/images/post/1by1/03.jpg');
+                  ">
+                                        <p class="story-name">Samuel Bishop</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="story-card" style="
+                    background-image: url('https://social.webestica.com/assets/images/post/1by1/04.jpg');
+                  ">
+                                        <p class="story-name" style="padding-top: 110px !important">
+                                            Carolyn Ortiz
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="card card-body col-md-12 mt-3">
+                                <div class="d-flex mb-3">
+                                    <div class="avatar avatar-xs me-2">
+                                        <a href="#">
+                                            <img class="avatar-img rounded-circle"
+                                                src="https://social.webestica.com/assets/images/avatar/03.jpg" alt=""
+                                                style="height: 40px; width: 40px; margin-top: 5px" />
+                                        </a>
+                                    </div>
+                                    <form class="w-100" style="margin-top: 10px">
+                                        <textarea class="form-control pe-4 border-0" rows="2"
+                                            placeholder="Share your thoughts..."></textarea>
+                                    </form>
+                                </div>
+                                <ul class="nav nav-pills nav-stack small fw-normal">
+                                    <li class="nav-item" style="margin-right: 10px">
+                                        <a class="nav-link bg-light py-1 px-2 mb-0 comment-text" href="#!"
+                                            data-bs-toggle="modal" data-bs-target="#feedActionPhoto">
+                                            <img class="bi bi-image-fill text-success pe-2" height="25" width="35"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Circle-icons-image.svg/1200px-Circle-icons-image.svg.png"
+                                                alt="" />
+                                            Photo</a>
+                                    </li>
+                                    <li class="nav-item" style="margin-right: 10px">
+                                        <a class="nav-link bg-light py-1 px-2 mb-0 comment-text" href="#!"
+                                            data-bs-toggle="modal" data-bs-target="#feedActionVideo">
+                                            <img style="height: 20px" class="bi bi-camera-reels-fill text-info pe-2"
+                                                src="https://www.seekpng.com/png/detail/22-220061_free-icons-png-flat-video-icon-png.png"
+                                                alt="" />
+                                            Video</a>
+                                    </li>
+                                    <li class="nav-item" style="margin-right: 10px">
+                                        <a href="#" class="nav-link bg-light py-1 px-2 mb-0 comment-text"
+                                            data-bs-toggle="modal" data-bs-target="#modalCreateEvents">
+                                            <img height="27px" class="bi bi-calendar2-event-fill text-danger pe-2"
+                                                src="data:image/jpeg;base64,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"
+                                                alt="" />
+                                            Event
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" style="margin-right: 10px">
+                                        <a class="nav-link bg-light py-1 px-2 mb-0 comment-text" href="#!"
+                                            data-bs-toggle="modal" data-bs-target="#modalCreateFeed">
+                                            <img class="bi bi-emoji-smile-fill text-warning pe-2" height="25px"
+                                                src="https://img.favpng.com/14/22/5/emoticon-emoji-icon-png-favpng-zYKN8GfdCBeaN1rxYybZWBGuh.jpg"
+                                                alt="" />
+                                            Feeling /Activity</a>
+                                    </li>
+                                    <li class="nav-item dropdown ms-lg-auto">
+                                        <a class="nav-link bg-light py-1 px-2 mb-0" href="#" id="feedActionShare"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
+                                                class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="feedActionShare">
+                                            <lli>
+                                                <a class="dropdown-item" href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-envelope me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                    </svg>
+                                                    Create a poll</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-bookmark-check me-2"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                <path
+                                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                            </svg>Ask a question
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil-square me-2"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                            </svg>Help</a>
+                                    </li>
+                                </ul>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="card gx-5 mt-3">
+                                <div class="row card-header border-0 pb-0">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" style="border-radius: 20px">
+                                                <img class="avatar-img rounded-circle me-2"
+                                                    src="https://social.webestica.com/assets/images/avatar/04.jpg"
+                                                    alt="" height="40" style="margin-top: 10px" />
+                                            </a>
+                                            <div>
+                                                <div class="nav nav-divider">
+                                                    <h6 class="nav-item card-title mb-0">
+                                                        <a href="#!" class="profile-name">
+                                                            Lori Ferguson
+                                                        </a>
+                                                    </h6>
+                                                    <span class="nav-item small ms-3"> 2hr</span>
+                                                </div>
+                                                <p class="mb-0 small">Web Developer at Webestica</p>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a href="#" class="text-secondary btn btn-secondary-soft-hover py-1 px-2"
+                                                id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="cardFeedAction">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-bookmark me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                        </svg>
+                                                        Save post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-person-plus me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                                        </svg>
+                                                        Unfollow lori ferguson
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-x-circle me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                        </svg>
+                                                        Hide post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-slash-circle me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M11.354 4.646a.5.5 0 0 0-.708 0l-6 6a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708z" />
+                                                        </svg>
+                                                        Block</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider" />
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-flag me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z" />
+                                                        </svg>
+                                                        Report post</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        I'm thrilled to share that I've completed a graduate
+                                        certificate course in project management with the
+                                        president's honor roll.
+                                    </p>
+                                    <img class="card-img"
+                                        src="https://social.webestica.com/assets/images/post/3by2/01.jpg" alt="Post" />
+                                    <ul class="nav nav-stack py-3 small">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#!"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor"
+                                                    class="bi bi-hand-thumbs-up-fill me-2" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                                                </svg>Liked (56)</a>
+                                        </li>
+                                        <li class="nav-item ms-auto">
+                                            <a class="nav-link comment-text" href="#!">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="#676a79" class="bi bi-chat-text-fill me-2"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+                                                </svg>Comments (12)</a>
+                                        </li>
+
+                                        <li class="nav-item dropdown  ms-sm-auto">
+                                            <a href="#" class="nav-link mb-0 comment-text" id="cardShareAction4"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-sign-turn-right me-2"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5 8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5Z">
+                                                    </path>
+                                                    <path fill-rule="evenodd"
+                                                        d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435Zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134Z">
+                                                    </path>
+                                                </svg>
+                                                Share (3)
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="cardShareAction4">
+                                                <li>
+                                                    <a class="dropdown-item " href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-envelope"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                        </svg>
+                                                        Send via Direct Message</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-bookmark-check"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                            <path
+                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                        </svg>
+                                                        Bookmark </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                                                            <path
+                                                                d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                                                        </svg>
+                                                        Copy link to post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                                        </svg>
+                                                        Share post via …</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-pencil-square"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                                        </svg>
+                                                        Share to News Feed</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex mb-3">
+                                        <div class="avatar avatar-xs me-2">
+                                            <a href="#!">
+                                                <img class="avatar-img rounded-circle" style="margin-top: 1px"
+                                                    src="https://social.webestica.com/assets/images/avatar/12.jpg"
+                                                    height="40" alt="" />
+                                            </a>
+                                        </div>
+                                        <form class="w-100">
+                                            <textarea data-autoresize="" class="form-control pe-4 bg-light" rows="1"
+                                                placeholder="Add a comment..."></textarea>
+                                        </form>
+                                    </div>
+                                    <ul class="comment-wrap list-unstyled">
+                                        <li class="comment-item">
+                                            <div class="d-flex position-relative">
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#!">
+                                                        <img class="avatar-img rounded-circle mt-2"
+                                                            src="https://social.webestica.com/assets/images/avatar/05.jpg"
+                                                            height="40" alt="" /></a>
+                                                </div>
+                                                <div class="ms-2">
+                                                    <div class="bg-color rounded-start-top-0 p-3 rounded">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h6 class="mb-1">
+                                                                <a href="#!" class="profile-name">
+                                                                    Frances Guerrero
+                                                                </a>
+                                                            </h6>
+                                                            <small class="ms-2">5hr</small>
+                                                        </div>
+                                                        <p class="small mb-0">
+                                                            Removed demands expense account in outward tedious
+                                                            do. Particular way thoroughly unaffected
+                                                            projection.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="nav nav-divider small">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!">
+                                                                Like (3)</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!">
+                                                                Reply</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!">
+                                                                View 5 replies</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="comment-item-nested list-unstyled">
+                                                <li class="comment-item">
+                                                    <div class="d-flex">
+                                                        <div class="avatar avatar-xs">
+                                                            <a href="#!"><img
+                                                                    class="avatar-img rounded-circle ms-3 mt-2"
+                                                                    src="https://social.webestica.com/assets/images/avatar/06.jpg"
+                                                                    height="40" alt="" /></a>
+                                                        </div>
+                                                        <div class="ms-2">
+                                                            <div class="bg-color p-3 rounded">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <h6 class="mb-1">
+                                                                        <a href="#!" class="profile-name">
+                                                                            Lori Stevens
+                                                                        </a>
+                                                                    </h6>
+                                                                    <small class="ms-2">2hr</small>
+                                                                </div>
+                                                                <p class="small mb-0">
+                                                                    See resolved goodness felicity shy civility
+                                                                    domestic had but Drawings offended yet
+                                                                    answered Jennings perceive.
+                                                                </p>
+                                                            </div>
+                                                            <ul class="nav nav-divider small">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link comment-text" href="#!">
+                                                                        Like (5)</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link comment-text" href="#!">
+                                                                        Reply</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="comment-item">
+                                                    <div class="d-flex">
+                                                        <div class="avatar avatar-story avatar-xs">
+                                                            <a href="#!"><img
+                                                                    class="avatar-img rounded-circle mt-2 ms-2"
+                                                                    src="https://social.webestica.com/assets/images/avatar/07.jpg"
+                                                                    height="40" alt="" /></a>
+                                                        </div>
+                                                        <div class="ms-2">
+                                                            <div class="bg-color p-3 rounded">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <h6 class="mb-1">
+                                                                        <a href="#!" class="profile-name">
+                                                                            Billy Vasquez
+                                                                        </a>
+                                                                    </h6>
+                                                                    <small class="ms-2">15min</small>
+                                                                </div>
+                                                                <p class="small mb-0">
+                                                                    Wishing calling is warrant settled was lucky.
+                                                                </p>
+                                                            </div>
+                                                            <ul class="nav nav-divider mb-0 small">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link comment-text" href="#!">
+                                                                        Like</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link comment-text" href="#!">
+                                                                        Reply</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        <li class="mb-2">
+                                            <a href="#!" class="comment-text ms-5"
+                                                style="text-decoration: none; font-size: 14px; font-weight: 500; color: black !important; padding-bottom: 10px;">
+                                                ... Load more replies
+                                            </a>
+                                        </li>
+
+                                        </li>
+                                        <li class="comment-item">
+                                            <div class="d-flex">
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#!"><img class="avatar-img rounded-circle mt-2 ms-2"
+                                                            height="40"
+                                                            src="https://social.webestica.com/assets/images/avatar/05.jpg"
+                                                            alt="" /></a>
+                                                </div>
+                                                <div class="ms-2">
+                                                    <div class="bg-color p-3 rounded">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h6 class="mb-1">
+                                                                <a href="#!" class="profile-name">
+                                                                    Frances Guerrero
+                                                                </a>
+                                                            </h6>
+                                                            <small class="ms-2">4min</small>
+                                                        </div>
+                                                        <p class="small mb-0">
+                                                            Removed demands expense account in outward tedious
+                                                            do. Particular way thoroughly unaffected
+                                                            projection.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="nav nav-divider small">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!">
+                                                                Like (1)</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!">
+                                                                Reply</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!">
+                                                                View 6 replies</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                    </ul>
+                                </div>
+                                <div class="card-footer border-0 pt-0 bg-white">
+                                    <a href="#!" class="comment-text mt-0 ms-2 loading" style="text-decoration: none">
+                                        ... Load more comments
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2 pt-3">
+                                                <a href="#!">
+                                                    <img class="avatar-img rounded-circle img-round"
+                                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYl6BYNUPMHmTzb0TzqmU0dbtb4WzZhYADtw&usqp=CAU"
+                                                        alt="" />
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <h6 class="card-title mb-0">
+                                                    <a href="#!" class="profile-name">
+                                                        Bootstrap: Front-end framework
+                                                    </a>
+                                                </h6>
+                                                <a href="#!" class="mb-0 text-body comment-text"
+                                                    style="text-decoration: none">Sponsored
+                                                    <i class="bi bi-info-circle ps-1" data-bs-container="body"
+                                                        data-bs-toggle="popover" data-bs-placement="top"
+                                                        data-bs-content="You're seeing this ad because your activity meets the intended audience of our site."
+                                                        data-bs-original-title="" title=""></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a href="#" class="text-secondary btn btn-secondary-soft-hover py-1 px-2"
+                                                id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="cardFeedAction">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-bookmark me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                        </svg>
+                                                        Save post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-person-plus me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                                        </svg>
+                                                        Unfollow lori ferguson
+                                                    </a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-x-circle me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                        </svg>
+                                                        Hide post</a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-slash-circle me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M11.354 4.646a.5.5 0 0 0-.708 0l-6 6a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708z" />
+                                                        </svg>
+                                                        Block</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-flag me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z" />
+                                                        </svg>
+                                                        Report post</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-0 text-center">Quickly design and customize responsive mobile-first
+                                        sites with Bootstrap.
+                                    </p>
+                                </div>
+                                <img src="https://social.webestica.com/assets/images/post/3by2/02.jpg" alt="">
+                                <div class="card-footer border-0 d-flex justify-content-between align-items-center p-4"
+                                    style="background-color: white;">
+                                    <p class="mb-0">Currently v5.1.3 </p>
+                                    <a class="btn btn-primary-soft btn-sm view-btn" href="#"> Download now </a>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-header border-0 pb-0">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2 pt-3">
+                                                <a href="#">
+                                                    <img class="avatar-img rounded-circle" height="45"
+                                                        src="https://social.webestica.com/assets/images/avatar/04.jpg"
+                                                        alt=""> </a>
+                                            </div>
+                                            <div>
+                                                <h6 class="card-title mb-0"> <a href="#" class="profile-name"> Judy
+                                                        Nguyen </a></h6>
+                                                <div class="nav nav-divider">
+                                                    <p class="nav-item mb-0 small">Web Developer at Webestica</p>
+                                                    <span class="nav-item small ms-3" data-bs-toggle="tooltip"
+                                                        data-bs-placement="top" title=""
+                                                        data-bs-original-title="Public"> <svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                                                        </svg></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a href="#" class="text-secondary btn btn-secondary-soft-hover py-1 px-2"
+                                                id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="cardFeedAction">
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-bookmark me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                        </svg>
+                                                        Save post</a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-person-plus me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                                        </svg>
+                                                        Unfollow lori ferguson </a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-x-circle me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                        </svg>
+                                                        Hide post</a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-slash-circle me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M11.354 4.646a.5.5 0 0 0-.708 0l-6 6a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708z" />
+                                                        </svg>
+                                                        Block</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-flag me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z" />
+                                                        </svg>
+                                                        Report post</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>I'm so privileged to be involved in the <a href="#!"
+                                            style="text-decoration: none;">@bootstrap </a>
+                                        hiring process! Interviewing with their team was fun and I hope this can be a
+                                        valuable resource for
+                                        folks!
+                                        <a href="#!" style="text-decoration: none;"> #inclusivebusiness</a>
+                                        <a href="#!" style="text-decoration: none;"> #internship</a> <a href="#!"
+                                            style="text-decoration: none;"> #hiring</a> <a href="#"
+                                            style="text-decoration: none;"> #apply
+                                        </a>
+                                    </p>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <a class="h-100" href="#" data-glightbox="" data-gallery="image-popup">
+                                                    <img class="rounded img-fluid"
+                                                        src="https://social.webestica.com/assets/images/post/1by1/03.jpg"
+                                                        alt="Image">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" data-glightbox="" data-gallery="image-popup">
+                                                    <img class="rounded img-fluid"
+                                                        src="https://social.webestica.com/assets/images/post/3by2/01.jpg"
+                                                        alt="Image">
+                                                </a>
+                                                <div class="position-relative bg-dark mt-3 rounded">
+                                                    <div
+                                                        class="hover-actions-item position-absolute top-50 start-50 translate-middle z-index-9">
+                                                        <a class="btn btn-link text-white" href="#"
+                                                            style="font-size: 18px; color: #fff !important; text-decoration: none;">
+                                                            View all </a>
+                                                    </div>
+                                                    <a href="#" data-glightbox="" data-gallery="image-popup">
+                                                        <img class="img-fluid opacity-50 rounded"
+                                                            src="https://social.webestica.com/assets/images/post/3by2/02.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-stack py-3 small">
+                                        <li class="nav-item">
+                                            <a class="nav-link active text-secondary" href="#!">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                                Louis, Billy and 126 others </a>
+                                        </li>
+                                        <li class="nav-item ms-sm-auto">
+                                            <a class="nav-link comment-text" href="#!">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="#676a79" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                                </svg>
+                                                Comments (12)</a>
+                                        </li>
+                                    </ul>
+                                    <ul
+                                        class="nav nav-pills nav-pills-light nav-fill nav-stack small border-top border-bottom py-1 mb-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-0 comment-text comment-text" href="#!"
+                                                style="background-color: #eef0f2;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="blue" class="bi bi-heart me-2" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Liked (56)</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link mb-0 comment-text" id="cardShareAction4"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-sign-turn-right me-2"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5 8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5Z">
+                                                    </path>
+                                                    <path fill-rule="evenodd"
+                                                        d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435Zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134Z">
+                                                    </path>
+                                                </svg>
+                                                Share (3)
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="cardShareAction4">
+                                                <li>
+                                                    <a class="dropdown-item " href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-envelope"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                        </svg>
+                                                        Send via Direct Message</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-bookmark-check"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                            <path
+                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                        </svg>
+                                                        Bookmark </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                                                            <path
+                                                                d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                                                        </svg>
+                                                        Copy link to post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                                        </svg>
+                                                        Share post via …</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-pencil-square"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                                        </svg>
+                                                        Share to News Feed</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-0 comment-text" href="#!">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                                                </svg>
+                                                Send</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="comment-wrap list-unstyled">
+                                        <li class="comment-item">
+                                            <div class="d-flex">
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#">
+                                                        <img class="avatar-img rounded-circle mt-1" height="40"
+                                                            src="https://social.webestica.com/assets/images/avatar/05.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="ms-2">
+                                                    <div class=" rounded-start-top-0 p-3 rounded bg-color">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h6 class="mb-1">
+                                                                <a href="#!" class="profile-name"> Frances Guerrero </a>
+                                                            </h6>
+                                                            <small class="ms-2 comment-text">
+                                                                5hr
+                                                            </small>
+                                                        </div>
+                                                        <p class="small mb-0 comment-text">
+                                                            Removed demands expense account in outward tedious do.
+                                                            Particular way thoroughly unaffected projection.
+                                                        </p>
+                                                    </div>
+                                                    <ul class="nav nav-divider small">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!"> Like (3)</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!"> Reply</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!"> View 5
+                                                                replies</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="comment-item-nested list-unstyled">
+                                                <li class="comment-item">
+                                                    <div class="d-flex">
+                                                        <div class="avatar avatar-xs">
+                                                            <a href="#!">
+                                                                <img class="avatar-img rounded-circle mt-1" height="40"
+                                                                    src="https://social.webestica.com/assets/images/avatar/06.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="ms-2">
+                                                            <div class="bg-color p-3 rounded">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <h6 class="mb-1">
+                                                                        <a href="#!" class="profile-name"> Lori Stevens
+                                                                        </a>
+                                                                    </h6>
+                                                                    <small class="ms-2 comment-text">2hr</small>
+                                                                </div>
+                                                                <p class="small mb-0 comment-text">
+                                                                    See resolved goodness felicity shy civility domestic
+                                                                    had but Drawings offended yet answered Jennings
+                                                                    perceive.
+                                                                </p>
+                                                            </div>
+                                                            <ul class="nav nav-divider small">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link comment-text" href="#!"> Like
+                                                                        (5)</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link comment-text" href="#!">
+                                                                        Reply</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="comment-item">
+                                                    <div class="d-flex">
+                                                        <div class="avatar avatar-xs">
+                                                            <a href="#!">
+                                                                <img class="avatar-img rounded-circle mt-1" height="40"
+                                                                    src="https://social.webestica.com/assets/images/avatar/07.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="ms-2">
+                                                            <div class="bg-color p-3 rounded">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <h6 class="mb-1">
+                                                                        <a href="#!" class="profile-name"> Billy Vasquez
+                                                                        </a>
+                                                                    </h6>
+                                                                    <small class="ms-2 comment-text">15min</small>
+                                                                </div>
+                                                                <p class="small mb-0 comment-text">
+                                                                    Wishing calling is warrant settled was lucky.
+                                                                </p>
+                                                            </div>
+                                                            <ul class="nav nav-divider small">
+                                                                <li class="nav-item comment-text">
+                                                                    <a class="nav-link comment-text" href="#!"> Like</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link comment-text" href="#!">
+                                                                        Reply</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <a href="#!" class="comment-text mt-0 pt-0 ms-5 loading">
+                                                ... Load more replies
+                                            </a>
+                                        </li>
+                                        <li class="comment-item mt-2">
+                                            <div class="d-flex">
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#!">
+                                                        <img class="avatar-img rounded-circle mt-2" height="40"
+                                                            src="https://social.webestica.com/assets/images/avatar/05.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="ms-2">
+                                                    <div class="bg-color p-3 rounded">
+                                                        <div class="d-flex justify-content-center">
+                                                            <h6 class="mb-1">
+                                                                <a href="#!" class="profile-name me-5">
+                                                                    Frances Guerrero </a>
+                                                            </h6>
+                                                            <small class="ms-2">4min</small>
+                                                        </div>
+                                                        <p class="small mb-0 comment-text">Congratulations:)</p>
+                                                        <div class="card p-2 border border-2 rounded mt-2 shadow-none">
+                                                            <img src="https://social.webestica.com/assets/images/elements/12.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                    <ul class="nav nav-divider pt-2 small">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!"> Like (1)</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!"> Reply</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link comment-text" href="#!"> View 6
+                                                                replies</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- <li class="pt-3 pb-0">
+                      <a href="#!" class="comment-text mb-3 ms-1 loading bg-primry" >
+                        ... Load more comments 
+                      </a> 
+                    </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-header border-0 pb-0">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar me-2">
+                                                <a href="#"> <img class="avatar-img rounded-circle mt-1" height="40"
+                                                        src="https://social.webestica.com/assets/images/logo/13.svg"
+                                                        alt=""> </a>
+                                            </div>
+                                            <div>
+                                                <h6 class="card-title mb-0"> <a href="#!" class="profile-name"
+                                                        style="text-decoration: none; font-size:16px; font-weight:bold; margin-top:5px !important;">
+                                                        Apple Education </a></h6>
+                                                <p class="mb-0 small comment-text">9 November at 23:29</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="text-secondary btn btn-secondary-soft-hover py-1 px-2"
+                                            id="cardShareAction5" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots"></i>
+                                        </a>
+                                        <div class="dropdown">
+                                            <a href="#" class="text-secondary btn btn-secondary-soft-hover py-1 px-2"
+                                                id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="cardFeedAction">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-bookmark me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                        </svg>
+                                                        Save post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-person-plus me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                                        </svg>
+                                                        Unfollow lori ferguson
+                                                    </a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-x-circle me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                        </svg>
+                                                        Hide post</a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-slash-circle me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M11.354 4.646a.5.5 0 0 0-.708 0l-6 6a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708z" />
+                                                        </svg>
+                                                        Block</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-flag me-2"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z" />
+                                                        </svg>
+                                                        Report post</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <p class="comment-text">Find out how you can save time in the classroom this year.
+                                        Earn recognition
+                                        while you learn new skills on iPad and Mac. Start recognition your first Apple
+                                        Teacher badge today!
+                                    </p>
+                                    <ul class="nav nav-stack pb-2 small">
+                                        <li class="nav-item">
+                                            <a class="nav-link active text-secondary" href="#!">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="white"
+                                                    class="bi bi-heart bg-danger me-1 icon-xs text-white rounded-circle"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Louis, Billy and 126 others </a>
+                                        </li>
+                                        <li class="nav-item ms-sm-auto">
+                                            <a class="nav-link comment-text" href="#!">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                                                </svg>
+                                                Comments (12)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer py-3 bg-white">
+                                    <ul class="nav nav-fill nav-stack small">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-0 active" href="#!">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Liked (56)</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link mb-0 comment-text" id="cardShareAction4"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-sign-turn-right me-2"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5 8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5Z">
+                                                    </path>
+                                                    <path fill-rule="evenodd"
+                                                        d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435Zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134Z">
+                                                    </path>
+                                                </svg>
+                                                Share (3)
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="cardShareAction4">
+                                                <li>
+                                                    <a class="dropdown-item " href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-envelope"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                        </svg>
+                                                        Send via Direct Message</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-bookmark-check"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                            <path
+                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                        </svg>
+                                                        Bookmark </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                                                            <path
+                                                                d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                                                        </svg>
+                                                        Copy link to post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                                        </svg>
+                                                        Share post via …</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-pencil-square"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                                        </svg>
+                                                        Share to News Feed</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-0 comment-text" href="#!">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                                                </svg>
+                                                Send</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div style="margin-left: auto;" class="col-lg-3 col-md-12 col-sm-12 mt-1 ">
+                            <div class="m-0">
+                                <div class="card " style="background-color: white;">
+                                    <div class="card-header pb-0 border-0">
+                                        <h5 class="card-title mb-0 mt-2 ms-2">Who to follow</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="hstack gap-2 mb-3">
+                                            <div class="avatar">
+                                                <a href="#!"><img class="avatar-img rounded-circle mt-1"
+                                                        src="https://social.webestica.com/assets/images/avatar/04.jpg"
+                                                        height="40" alt=""></a>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <a class="h6 mb-0 profile-name" href="#!">Judy Nguyen </a>
+                                                <p class="mb-0 small text-truncate comment-text">News anchor</p>
+                                            </div>
+                                            <a class="btn btn-primary-soft plus-btn rounded-circle icon-md ms-auto"
+                                                href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                                    fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="hstack gap-2 mb-3">
+                                            <div class="avatar avatar-story">
+                                                <a href="#!"> <img class="avatar-img rounded-circle mt-1"
+                                                        src="https://social.webestica.com/assets/images/avatar/05.jpg"
+                                                        height="40" alt=""> </a>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <a class="h6 mb-0 profile-name" href="#!">Amanda Reed </a>
+                                                <p class="mb-0 small text-truncate comment-text">Web Developer</p>
+                                            </div>
+                                            <a class="btn btn-primary-soft plus-btn rounded-circle icon-md ms-auto"
+                                                href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                                    fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="hstack gap-2 mb-3">
+                                            <div class="avatar">
+                                                <a href="#"> <img class="avatar-img rounded-circle mt-1"
+                                                        src="https://social.webestica.com/assets/images/post/1by1/03.jpg"
+                                                        height="40" alt=""> </a>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <a class="h6 mb-0 profile-name" href="#!">Billy Vasquez </a>
+                                                <p class="mb-0 small text-truncate comment-text">News anchor</p>
+                                            </div>
+                                            <a class="btn btn-primary rounded-circle icon-md ms-auto" href="#"
+                                                style="padding-bottom: 11px;"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor"
+                                                    class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                    <path
+                                                        d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                </svg></a>
+                                        </div>
+                                        <div class="hstack gap-2 mb-3">
+                                            <div class="avatar">
+                                                <a href="#"> <img class="avatar-img rounded-circle mt-1"
+                                                        src="https://social.webestica.com/assets/images/avatar/06.jpg"
+                                                        height="40" alt=""> </a>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <a class="h6 mb-0 profile-name" href="#!">Lori Ferguson </a>
+                                                <p class="mb-0 small text-truncate comment-text">Web Developer at
+                                                    Webestica</p>
+                                            </div>
+                                            <a class="btn btn-primary-soft plus-btn rounded-circle icon-md ms-auto"
+                                                href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                                    fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="hstack gap-2 mb-3">
+                                            <div class="avatar">
+                                                <a href="#"> <img class="avatar-img rounded-circle mt-1"
+                                                        src="https://social.webestica.com/assets/images/avatar/placeholder.jpg"
+                                                        height="40" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <a class="h6 mb-0 profile-name" href="#!">Carolyn Ortiz </a>
+                                                <p class="mb-0 small text-truncate comment-text">News anchor</p>
+                                            </div>
+                                            <a class="btn btn-primary-soft plus-btn rounded-circle icon-md ms-auto"
+                                                href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                                    fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="d-grid mt-3">
+                                            <a class="btn btn-sm btn-primary-soft view-btn" href="#!">View more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-lg-12 col-md-12 mt-3">
+                                <div class="card">
+                                    <div class="card-header pb-0 border-0">
+                                        <h5 class="card-title mb-0 mt-1">Today’s news</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <h6 class="mb-0 "><a href="#" class="blog-text">Ten questions you should
+                                                    answer truthfully</a>
+                                            </h6>
+                                            <small>2hr</small>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h6 class="mb-0"><a href="#" class="blog-text">Five unbelievable facts about
+                                                    money</a></h6>
+                                            <small>3hr</small>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h6 class="mb-0"><a href="#" class="blog-text">Best Pinterest Boards for
+                                                    learning about
+                                                    business</a></h6>
+                                            <small>4hr</small>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h6 class="mb-0"><a href="#" class="blog-text">Skills that you can learn
+                                                    from business</a></h6>
+                                            <small>6hr</small>
+                                        </div>
+                                        <a href="#!" role="button" style="text-decoration: none; color: #676a79;">
+
+                                            View all latest news
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
+        </main>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
